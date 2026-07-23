@@ -1,0 +1,288 @@
+.whyChooseSection {
+  padding: 80px 0;
+  background: linear-gradient(180deg, #edf5fd 0%, #f4f8fd 100%);
+}
+
+.bentoGrid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 24px;
+  align-items: stretch;
+  margin-top: 48px;
+}
+
+.gridColLeft {
+  height: 100%;
+}
+
+.gridColMiddle {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+}
+
+.gridColRight {
+  height: 100%;
+}
+
+/* Left Column Card (Patient Approval) */
+.patientCard {
+  width: 100%;
+  max-width: 599px;
+  height: 454.18px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 28px;
+  overflow: hidden;
+  position: relative;
+  background: #ffffff;
+  border: none !important;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+  box-sizing: border-box;
+}
+
+.imageMockup {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Background Image Asset (WhyChooseleftbackground.png) */
+.blueShapeBackground {
+  position: absolute;
+  top: 15%;
+  left: 4%;
+  width: 90%;
+  height: 80%;
+  object-fit: contain;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Patient Approvals Graph Image */
+.bargraphImg {
+  position: absolute;
+  top: 16%;
+  right: 7%;
+  width: 189.05px;
+  height: 155.58px;
+  z-index: 2;
+  border-radius: 10.76px;
+  object-fit: cover;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+}
+
+/* Man Cutout Image */
+.mockupImg {
+  position: absolute;
+  bottom: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  width: 540px;
+  max-width: none;
+  height: auto;
+  object-fit: contain;
+  object-position: bottom center;
+  display: block;
+}
+
+/* Floating Treatment Value Badge */
+.floatingApprovalBadge {
+  position: absolute;
+  bottom: 22%;
+  left: 6%;
+  background: #ffffff;
+  padding: 12px 20px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  z-index: 10;
+}
+
+.badgeIconCircle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #3b82f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.badgeTextGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.badgeLabel {
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.badgeVal {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.2;
+}
+
+/* Middle Column Cards */
+.emiTextCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 36px 32px;
+  background-color: #ffffff;
+  border-radius: 19.56px;
+  flex: 1;
+  border: none !important;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+}
+
+.cardTitle {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.3;
+}
+
+.cardDesc {
+  font-size: 0.95rem;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.emiButtonCard {
+  padding: 24px 32px;
+  background-color: #ffffff;
+  border-radius: 19.56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none !important;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+}
+
+.cardBtn {
+  width: 100%;
+  border-radius: var(--radius-full);
+}
+
+/* Right Column Card (Wallet) */
+.walletCard {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  height: 454.18px;
+  border-radius: 19.56px;
+  background-color: #ffffff;
+  border: none !important;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+  box-sizing: border-box;
+}
+
+.walletImgWrapper {
+  width: 100%;
+  height: 318px;
+  border-radius: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.walletImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.walletDesc {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #525252;
+  padding: 20px 16px 8px 16px;
+  margin: 0;
+}
+
+@media (max-width: 1100px) {
+  .bentoGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .patientCard,
+  .walletCard {
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .whyChooseSection {
+    padding: 48px 0;
+  }
+
+  .bentoGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 32px;
+  }
+
+  .patientCard {
+    max-width: 100%;
+    height: 380px;
+  }
+
+  .mockupImg {
+    width: 100%;
+    max-width: 360px;
+    bottom: -40px;
+  }
+
+  .bargraphImg {
+    width: 140px;
+    height: auto;
+    top: 10%;
+    right: 4%;
+  }
+
+  .floatingApprovalBadge {
+    padding: 8px 14px;
+    bottom: 10%;
+    left: 4%;
+  }
+
+  .badgeVal {
+    font-size: 16px;
+  }
+
+  .walletCard {
+    height: auto;
+  }
+
+  .walletImgWrapper {
+    height: 240px;
+  }
+
+  .walletDesc {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 14px 8px 4px 8px;
+  }
+}

@@ -1,0 +1,172 @@
+.statisticsSection {
+  padding: 96px 0;
+  background-color: #f8fafc;
+  width: 100%;
+}
+
+/* Top Header & Large Banners Grid */
+.topHeaderGrid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.leftCol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.badge {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  color: #3b82f6;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 0.85rem;
+  padding: 8px 20px;
+  border-radius: var(--radius-full);
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(59, 130, 246, 0.05);
+}
+
+.mainTitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 54px;
+  letter-spacing: 0;
+  color: #242424;
+  margin: 0 0 16px 0;
+}
+
+.description {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  color: #424242;
+  max-width: 520px;
+  margin: 0;
+}
+
+/* Right Hero Banners Stack */
+.rightHeroStack {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.heroBannerCard {
+  background: linear-gradient(135deg, #f0f7ff 0%, #e6f0fa 100%);
+  border-radius: 20px;
+  padding: 28px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 36px;
+  border: 1px solid rgba(219, 234, 254, 0.8);
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.03);
+}
+
+.heroVal {
+  font-family: 'Poppins', sans-serif;
+  font-size: 44px;
+  font-weight: 700;
+  color: #3b82f6;
+  line-height: 1;
+  flex-shrink: 0;
+  min-width: 160px;
+}
+
+.heroLabel {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #334155;
+  line-height: 1.4;
+  white-space: pre-line;
+}
+
+/* Bottom 4 Stat Cards Row */
+.bottomCardsRow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 16px;
+}
+
+.statCard {
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.statCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 36px rgba(15, 23, 42, 0.08);
+}
+
+.gridVal {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #1e293b;
+  line-height: 1;
+}
+
+.gridLabel {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #64748b;
+}
+
+/* Footer Note */
+.footerNote {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #64748b;
+  margin-top: 36px;
+  text-align: left;
+}
+
+@media (max-width: 992px) {
+  .topHeaderGrid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .bottomCardsRow {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .bottomCardsRow {
+    grid-template-columns: 1fr;
+  }
+
+  .heroBannerCard {
+    padding: 20px 24px;
+    gap: 20px;
+  }
+
+  .heroVal {
+    font-size: 32px;
+    min-width: auto;
+  }
+}

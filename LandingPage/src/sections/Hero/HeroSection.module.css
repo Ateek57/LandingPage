@@ -1,0 +1,279 @@
+.heroSection {
+  padding-top: 16px;
+  padding-bottom: 60px;
+  position: relative;
+  background: linear-gradient(180deg, #f6f9fc 0%, #e3effa 50%, #daeaf8 100%);
+  width: 100%;
+  border-radius: 0 0 44px 44px;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+}
+
+.heroWrapper {
+  position: relative;
+  padding: 40px 0 30px 0;
+  background: transparent !important;
+  border-radius: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  min-height: 669.17px;
+  max-width: 1434px;
+  margin: 0 auto;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 889px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+
+.topBadge {
+  margin-top: 40px;
+  margin-bottom: 24px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  color: #3b82f6;
+  font-weight: 500;
+  font-size: 0.85rem;
+  padding: 8px 20px;
+  border-radius: var(--radius-full);
+  box-shadow: 0 2px 10px rgba(59, 130, 246, 0.05);
+  white-space: normal;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 54px;
+  line-height: 64px;
+  letter-spacing: 0;
+  color: #242424;
+  margin-bottom: 22px;
+  max-width: 850px;
+  width: 100%;
+}
+
+.desktopBr {
+  display: inline;
+}
+
+.subheading {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0;
+  color: #424242;
+  margin-bottom: 38px;
+  max-width: 889px;
+  width: 100%;
+}
+
+.buttonGroup {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Floating Cards Layout - Positioned Exactly as in Design Reference */
+.floatingCard {
+  position: absolute;
+  z-index: 5;
+  transition: transform 0.3s ease;
+}
+
+.floatingCard:hover {
+  transform: translateY(-4px);
+}
+
+.topLeft {
+  top: 22%;
+  left: 9%;
+}
+
+.bottomLeft {
+  bottom: 12%;
+  left: 2%;
+}
+
+.topRight {
+  top: 8%;
+  right: 1%;
+}
+
+.bottomRight {
+  top: 64%;
+  right: 8%;
+}
+
+/* Specific Card Styles */
+.growthBadge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  padding: 8px 18px;
+  border-radius: var(--radius-full);
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: #0f172a;
+}
+
+.growthIconWrapper {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #dcfce7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.incomeCard {
+  background: #ffffff;
+  padding: 22px 28px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
+  transform: rotate(-6deg);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cardLabel {
+  font-size: 0.75rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.cardValue {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.smallGrowth {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.75rem;
+  color: #22c55e;
+  font-weight: 700;
+}
+
+.topIncomeCard {
+  background: #ffffff;
+  padding: 24px 34px;
+  border-radius: 20px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.09);
+  transform: rotate(7deg);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cardValueLarge {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+}
+
+.communityCard {
+  background: #ffffff;
+  padding: 22px 26px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.communityNumber {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.communityText {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 1200px) {
+  .floatingCard {
+    display: none;
+  }
+
+  .title {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    padding-top: 10px;
+    padding-bottom: 40px;
+    border-radius: 0 0 24px 24px;
+  }
+
+  .heroWrapper {
+    min-height: auto;
+    padding: 20px 0 10px 0;
+  }
+
+  .topBadge {
+    margin-top: 20px;
+    margin-bottom: 16px;
+    font-size: 0.75rem;
+    padding: 6px 14px;
+    line-height: 1.35;
+    border-radius: 16px;
+  }
+
+  .title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 16px;
+  }
+
+  .desktopBr {
+    display: none;
+  }
+
+  .subheading {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 28px;
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .buttonGroup button,
+  .buttonGroup a {
+    width: 100%;
+  }
+
+  .floatingCard {
+    display: none !important;
+  }
+}

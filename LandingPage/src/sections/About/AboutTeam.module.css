@@ -1,0 +1,219 @@
+.teamSection {
+  padding: 96px 0;
+  background-color: #f8fafc;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background Grid Image Overlay (Using Bg ImageAbout.png asset) */
+.bgGridImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1100px;
+  height: 580px;
+  object-fit: cover;
+  object-position: top left;
+  mask-image: radial-gradient(ellipse at 15% 25%, black 45%, transparent 85%);
+  -webkit-mask-image: radial-gradient(ellipse at 15% 25%, black 45%, transparent 85%);
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.85;
+}
+
+.splitHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 48px;
+  margin-bottom: 56px;
+  position: relative;
+  z-index: 2;
+}
+
+.headerLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 600px;
+}
+
+.badge {
+  background: #ffffff !important;
+  border: 1px solid rgba(59, 130, 246, 0.15) !important;
+  color: #3b82f6 !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 0.85rem !important;
+  padding: 6px 18px !important;
+  border-radius: var(--radius-full) !important;
+  margin-bottom: 20px !important;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04) !important;
+}
+
+.mainTitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 54px;
+  letter-spacing: -0.01em;
+  color: #0f172a;
+  margin: 0;
+  white-space: pre-line;
+}
+
+.headerRight {
+  max-width: 480px;
+  padding-top: 56px;
+}
+
+.headerSubtitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 26px;
+  color: #475569;
+  margin: 0;
+}
+
+/* 4-Column Team Member Cards Grid */
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  position: relative;
+  z-index: 2;
+}
+
+.memberCard {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  width: 100%;
+}
+
+.imageWrapper {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  height: auto;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+  background-color: #edf5fd;
+}
+
+.memberImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* Specific Centering Alignment for Member 4 (Leslie Alexander) */
+.memberImgFour {
+  object-position: 70% 15%;
+}
+
+.memberCard:hover .memberImg {
+  transform: scale(1.03);
+}
+
+.infoRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+  padding: 0 4px;
+}
+
+.nameGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.memberName {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0;
+}
+
+.memberRole {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #64748b;
+}
+
+.socialBtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background-color: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.socialBtn:hover {
+  background-color: #e2e8f0;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1100px) {
+  .teamGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+
+  .memberCard {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  .headerRight {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .teamSection {
+    padding: 48px 0;
+  }
+
+  .teamGrid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .splitHeader {
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 36px;
+  }
+
+  .mainTitle {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .memberCard {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+
+  .imageWrapper {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 4;
+  }
+}

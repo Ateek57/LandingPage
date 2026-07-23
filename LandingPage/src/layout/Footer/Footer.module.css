@@ -1,0 +1,252 @@
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+.footer {
+  width: 100%;
+  background: linear-gradient(135deg, #dbeafe 0%, #edf5ff 50%, #dbeafe 100%);
+  border-radius: 44px 44px 0 0;
+  overflow: hidden;
+}
+
+.footerContainer {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 64px 48px 32px;
+  box-sizing: border-box;
+}
+
+/* ==========================================================
+   LOGO
+========================================================== */
+
+.logoRow{
+    height:70px;          /* jitni visible height chahiye */
+    overflow:hidden;
+    margin-bottom:12px;   /* description upar aa jayegi */
+}
+
+.logoImg{
+    height:159px;
+    width:auto;
+    display:block;
+
+    margin-top:-28px;     /* transparent top remove */
+    margin-bottom:-28px;  /* transparent bottom remove */
+}
+.logoLink {
+  display: inline-flex;
+  text-decoration: none;
+}
+
+
+
+/* ==========================================================
+   CONTENT
+========================================================== */
+
+.contentRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 170px 110px;
+  column-gap: 90px;
+  align-items: start;
+  margin-bottom: 60px;
+}
+
+.descriptionCol {
+  max-width: 650px;
+}
+
+.brandDesc {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32px;
+  color: #000;
+}
+
+/* ==========================================================
+   COLUMN
+========================================================== */
+
+.linksCol,
+.socialCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.colTitle {
+  margin: 0 0 22px;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+
+.linksList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  transition: .25s;
+}
+
+.link:hover {
+  color: #3b82f6;
+}
+
+/* ==========================================================
+   BOTTOM
+========================================================== */
+
+.bottomBar {
+  border-top: 1px solid rgba(0,0,0,.15);
+  padding-top: 24px;
+  text-align: center;
+}
+
+.copyrightText {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #000;
+}
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width:992px){
+
+.footerContainer{
+
+padding:56px 40px 28px;
+
+}
+
+.logoImg{
+
+height:110px;
+
+}
+
+.contentRow{
+
+grid-template-columns:1fr 1fr;
+
+row-gap:40px;
+
+column-gap:40px;
+
+}
+
+.descriptionCol{
+
+grid-column:1/-1;
+
+max-width:100%;
+
+}
+
+.brandDesc{
+
+max-width:100%;
+
+font-size:18px;
+
+line-height:30px;
+
+}
+
+}
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width:768px){
+
+.footer{
+
+border-radius:28px 28px 0 0;
+
+}
+
+.footerContainer{
+
+padding:40px 24px 24px;
+
+}
+
+.logoRow{
+
+display:flex;
+
+justify-content:center;
+
+margin-bottom:28px;
+
+}
+
+.logoImg{
+
+height:90px;
+
+}
+
+.contentRow{
+
+grid-template-columns:1fr;
+
+row-gap:36px;
+
+text-align:center;
+
+}
+
+.descriptionCol{
+
+max-width:100%;
+
+}
+
+.linksCol,
+.socialCol{
+
+align-items:center;
+
+}
+
+.brandDesc{
+
+font-size:16px;
+
+line-height:28px;
+
+}
+
+.linksList{
+
+align-items:center;
+
+}
+
+.bottomBar{
+
+padding-top:20px;
+
+}
+
+}

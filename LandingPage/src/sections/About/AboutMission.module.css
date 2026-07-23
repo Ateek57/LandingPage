@@ -1,0 +1,278 @@
+.missionSection {
+  background: #ffffff;
+  padding: 88px 0 96px;
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 64px;
+  align-items: flex-start;
+}
+
+/* Left Column */
+.leftCol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.missionBadge {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  color: #3b82f6;
+  font-weight: 500;
+  font-size: 0.85rem;
+  padding: 8px 20px;
+  border-radius: var(--radius-full);
+  margin-bottom: 24px;
+  box-shadow: 0 2px 10px rgba(59, 130, 246, 0.05);
+}
+
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 52px;
+  letter-spacing: -0.02em;
+  color: #242424;
+  margin-bottom: 48px;
+  max-width: 580px;
+}
+
+/* Accordion List */
+.accordionList {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.accordionItem {
+  border-top: 1px solid #e2e8f0;
+  padding: 24px 0;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.accordionItem:last-child {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.itemHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.itemTitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #64748b;
+  transition: color 0.25s ease;
+}
+
+.activeItem .itemTitle {
+  color: #0f172a;
+}
+
+.arrowIcon {
+  color: #0f172a;
+  margin-left: 16px;
+}
+
+.itemDescription {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #64748b;
+  line-height: 1.65;
+  margin-top: 14px;
+  margin-bottom: 0;
+  max-width: 500px;
+}
+
+/* Right Column */
+.rightCol {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.headerDesc {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #475569;
+  line-height: 1.7;
+  margin: 0;
+  max-width: 500px;
+}
+
+/* Image Card Container */
+.imageCardContainer {
+  position: relative;
+  width: 100%;
+  border-radius: 32px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+}
+
+.missionImg {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+/* Floating Overlay Card - Crisp Solid Background with Zero Dark Blur */
+.overlayCard {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  right: 24px;
+  background: #f8f6f0;
+  border-radius: 24px;
+  padding: 20px 24px;
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+}
+
+.cardHeaderRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.trustedText {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #242424;
+}
+
+.joinBtn {
+  background: #ccff00;
+  color: #0f172a;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.joinBtn:hover {
+  background: #b5e600;
+  transform: translateY(-1px);
+}
+
+.statValue {
+  font-family: 'Poppins', sans-serif;
+  font-size: 46px;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  margin-bottom: 4px;
+}
+
+.statLabel {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #475569;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .title {
+    font-size: 34px;
+    line-height: 44px;
+    max-width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .headerDesc {
+    max-width: 100%;
+  }
+
+  .missionImg {
+    height: 440px;
+    object-position: center 20%;
+  }
+
+  .overlayCard {
+    bottom: 16px;
+    left: 16px;
+    right: 16px;
+    padding: 16px 20px;
+    border-radius: 20px;
+  }
+
+  .statValue {
+    font-size: 36px;
+  }
+
+  .trustedText {
+    font-size: 14px;
+  }
+
+  .statLabel {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 640px) {
+  .missionSection {
+    padding: 48px 0;
+  }
+
+  .title {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .missionImg {
+    height: 380px;
+    object-position: center 15%;
+  }
+
+  .overlayCard {
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+    padding: 14px 16px;
+    border-radius: 18px;
+  }
+
+  .statValue {
+    font-size: 30px;
+    margin-bottom: 2px;
+  }
+
+  .trustedText {
+    font-size: 13px;
+  }
+
+  .joinBtn {
+    padding: 6px 14px;
+    font-size: 12px;
+  }
+
+  .statLabel {
+    font-size: 13px;
+  }
+}

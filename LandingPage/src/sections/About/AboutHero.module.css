@@ -1,0 +1,204 @@
+.heroSection {
+  padding-top: 16px;
+  padding-bottom: 60px;
+  position: relative;
+  background: linear-gradient(180deg, #f6f9fc 0%, #e3effa 50%, #daeaf8 100%);
+  width: 100%;
+  border-radius: 0 0 44px 44px;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+}
+
+.heroWrapper {
+  position: relative;
+  padding: 50px 0 40px 0;
+  background: transparent !important;
+  border-radius: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  min-height: 520px;
+  max-width: 1434px;
+  margin: 0 auto;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  max-width: 920px;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 52px;
+  line-height: 64px;
+  letter-spacing: -0.02em;
+  color: #242424;
+  margin-bottom: 24px;
+  max-width: 900px;
+  width: 100%;
+}
+
+.desktopBr {
+  display: inline;
+}
+
+.subheading {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0;
+  color: #424242;
+  margin-bottom: 36px;
+  max-width: 860px;
+  width: 100%;
+}
+
+.buttonGroup {
+  display: flex;
+  align-items: center;
+  margin-bottom: 54px;
+}
+
+.ctaBtn {
+  border-radius: var(--radius-full);
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.25);
+}
+
+/* Stats Row */
+.statsRow {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.statItem {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.statValue {
+  font-family: 'Poppins', sans-serif;
+  font-size: 38px;
+  font-weight: 600;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.statLabel {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #64748b;
+  line-height: 1.3;
+}
+
+.statDivider {
+  width: 1px;
+  height: 44px;
+  background-color: #cbd5e1;
+}
+
+@media (max-width: 992px) {
+  .title {
+    font-size: 38px;
+    line-height: 48px;
+  }
+  
+  .subheading {
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  .statsRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .statDivider {
+    display: none;
+  }
+
+  .desktopBr {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    padding-top: 12px;
+    padding-bottom: 40px;
+    border-radius: 0 0 24px 24px;
+  }
+
+  .heroWrapper {
+    padding: 24px 0 20px 0;
+    min-height: auto;
+  }
+
+  .title {
+    font-size: 28px;
+    line-height: 38px;
+    margin-bottom: 16px;
+  }
+
+  .subheading {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 28px;
+  }
+
+  .buttonGroup {
+    margin-bottom: 36px;
+    width: 100%;
+  }
+
+  .ctaBtn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .statsRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    width: 100%;
+  }
+
+  .statItem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .statValue {
+    font-size: 32px;
+  }
+
+  .statLabel {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  .statDivider {
+    display: none;
+  }
+}
