@@ -1,7 +1,7 @@
 .header {
   position: sticky;
   top: 16px;
-  z-index: 100;
+  z-index: 1000;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -20,7 +20,7 @@
   align-items: center;
   justify-content: space-between;
   background: #ffffff;
-  padding: 6px 5px 6px 0px;
+  padding: 6px 12px;
   border-radius: var(--radius-full);
   width: 100%;
   max-width: 1200px;
@@ -40,10 +40,12 @@
 }
 
 .logoImg {
-  height: 134px;
+  height: 110px;
   width: auto;
   object-fit: contain;
   display: block;
+  margin-top: -18px;
+  margin-bottom: -18px;
   margin-left: 0;
 }
 
@@ -103,6 +105,12 @@
 
 .mobileMenu {
   display: none;
+}
+
+@media (max-width: 1024px) {
+  .desktopNav {
+    gap: 20px;
+  }
 }
 
 @media (max-width: 868px) {
