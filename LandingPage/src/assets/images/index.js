@@ -13,10 +13,9 @@ import exceptionalFeatureBgImg from './ExceptionalFeaturesBackgroundImage.png';
 import workImage from './Work Image.png';
 import bgImageGrid from './Bg Image.png';
 import bgImageAbout from './Bg ImageAbout.png';
-import ourTeam1 from './OurTeam1.png';
-import ourTeam2 from './Ourteam2.png';
-import ourTeam3 from './OurTeam3.png';
-import ourTeam4 from './OurTeam4.png';
+import teamOne from './TeamOne.png';
+import teamTwo from './TeamTwo.png';
+import teamThree from './TeamThree.png';
 
 export const images = {
   brand: {
@@ -49,7 +48,7 @@ export const images = {
   about: {
     missionMan: missionMan,
     bgGrid: bgImageAbout,
-    team: [ourTeam1, ourTeam2, ourTeam3, ourTeam4]
+    team: [teamOne, teamTwo, teamThree]
   },
   process: {
     manLaptop: workImage,

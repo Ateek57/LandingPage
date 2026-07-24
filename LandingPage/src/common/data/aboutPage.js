@@ -120,28 +120,22 @@ export const aboutTeamData = {
   description: "We are a team of healthcare, fintech, and technology professionals committed to creating solutions that make treatments and education more accessible.",
   members: [
     {
-      id: "darrell",
-      name: "Darrell Steward",
-      role: "Chief Executive Officer",
+      id: "rajat",
+      name: "Rajat Mittal",
+      role: "Co-founder & CEO",
       imageIndex: 0
     },
     {
-      id: "darlene",
-      name: "Darlene Robertson",
-      role: "Project Manager",
+      id: "ashish-s",
+      name: "Ashish Singhal",
+      role: "Co-founder & CTO",
       imageIndex: 1
     },
     {
-      id: "albert",
-      name: "Albert Flores",
-      role: "Chief Executive Officer",
+      id: "ashish-m",
+      name: "Ashish Mittal",
+      role: "Co-founder & COO",
       imageIndex: 2
-    },
-    {
-      id: "leslie",
-      name: "Leslie Alexander",
-      role: "Development Manager",
-      imageIndex: 3
     }
   ]
 };

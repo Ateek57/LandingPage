@@ -25,13 +25,6 @@ const InstagramIcon = ({ size = 18, color = '#0f172a' }) => (
 export const AboutTeam = () => {
   return (
     <section id="our-team" className={styles.teamSection}>
-      {/* Background Grid Image Asset added by User */}
-      <img
-        src={images.about.bgGrid}
-        alt="Background grid"
-        className={styles.bgGridImage}
-      />
-
       <Container>
         {/* Split Header: Left Badge & Title, Right Description */}
         <div className={styles.splitHeader}>
@@ -52,7 +45,7 @@ export const AboutTeam = () => {
                 <img
                   src={images.about.team[member.imageIndex]}
                   alt={member.name}
-                  className={`${styles.memberImg} ${idx === 3 ? styles.memberImgFour : ''}`}
+                  className={styles.memberImg}
                 />
               </div>
               <div className={styles.infoRow}>
