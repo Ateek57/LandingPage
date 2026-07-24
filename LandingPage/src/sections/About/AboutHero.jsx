@@ -29,14 +29,18 @@ export const AboutHero = () => {
             <div className={styles.statsRow}>
               <div className={styles.statItem}>
                 <span className={styles.statValue}>{aboutHeroData.stats[0].value}</span>
-                <span className={styles.statLabel}>{aboutHeroData.stats[0].label}</span>
+                <span className={styles.statLabel}>
+                  Healthcare & Education <br /> Partners
+                </span>
               </div>
               
               <div className={styles.statDivider} />
 
               <div className={styles.statItem}>
                 <span className={styles.statValue}>{aboutHeroData.stats[1].value}</span>
-                <span className={styles.statLabel}>{aboutHeroData.stats[1].label}</span>
+                <span className={styles.statLabel}>
+                  Financing <br /> Facilitated
+                </span>
               </div>
             </div>
           </div>
