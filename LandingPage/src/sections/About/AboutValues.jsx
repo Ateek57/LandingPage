@@ -21,7 +21,7 @@ export const AboutValues = () => {
           {aboutValuesData.values.map((val) => (
             <div key={val.id} className={styles.valueCard}>
               <div className={styles.iconCircle}>
-                <DollarSign size={20} color="#0f172a" />
+                <DollarSign size={20} color="currentColor" />
               </div>
               <h3 className={styles.cardTitle}>{val.title}</h3>
               <p className={styles.cardDesc}>{val.description}</p>

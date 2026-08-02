@@ -176,77 +176,129 @@ line-height:30px;
    MOBILE
 ========================================================== */
 
-@media (max-width:768px){
+@media (max-width: 768px) {
+  .footer {
+    border-radius: 28px 28px 0 0;
+  }
 
-.footer{
+  .footerContainer {
+    padding: 36px 24px 24px;
+  }
 
-border-radius:28px 28px 0 0;
+  .logoRow {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 52px;
+    overflow: hidden;
+    margin-bottom: 16px;
+  }
 
+  .logoImg {
+    height: 115px;
+    width: auto;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    margin-left: -6px;
+  }
+
+  .contentRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 28px;
+    column-gap: 24px;
+    text-align: left;
+    margin-bottom: 32px;
+  }
+
+  .descriptionCol {
+    grid-column: 1 / -1;
+    max-width: 100%;
+  }
+
+  .brandDesc {
+    font-size: 15px;
+    line-height: 24px;
+    color: #1e293b;
+    text-align: left;
+  }
+
+  .linksCol,
+  .socialCol {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .colTitle {
+    margin-bottom: 16px;
+    font-size: 16px;
+  }
+
+  .linksList {
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .link {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .bottomBar {
+    padding-top: 20px;
+    text-align: left;
+  }
+
+  .copyrightText {
+    font-size: 13px;
+    text-align: left;
+  }
 }
 
-.footerContainer{
+@media (max-width: 450px) {
+  .footerContainer {
+    padding: 32px 18px 20px;
+  }
 
-padding:40px 24px 24px;
+  .logoRow {
+    height: 48px;
+    margin-bottom: 14px;
+  }
 
-}
+  .logoImg {
+    height: 105px;
+    margin-top: -18px;
+    margin-bottom: -18px;
+    margin-left: -5px;
+  }
 
-.logoRow{
+  .contentRow {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 24px;
+    text-align: left;
+  }
 
-display:flex;
+  .brandDesc {
+    font-size: 14px;
+    line-height: 22px;
+  }
 
-justify-content:center;
+  .linksCol,
+  .socialCol {
+    align-items: flex-start;
+    text-align: left;
+  }
 
-margin-bottom:28px;
+  .linksList {
+    align-items: flex-start;
+  }
 
-}
+  .bottomBar {
+    text-align: left;
+  }
 
-.logoImg{
-
-height:90px;
-
-}
-
-.contentRow{
-
-grid-template-columns:1fr;
-
-row-gap:36px;
-
-text-align:center;
-
-}
-
-.descriptionCol{
-
-max-width:100%;
-
-}
-
-.linksCol,
-.socialCol{
-
-align-items:center;
-
-}
-
-.brandDesc{
-
-font-size:16px;
-
-line-height:28px;
-
-}
-
-.linksList{
-
-align-items:center;
-
-}
-
-.bottomBar{
-
-padding-top:20px;
-
-}
-
+  .copyrightText {
+    text-align: left;
+  }
 }

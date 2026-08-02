@@ -88,6 +88,10 @@
   gap: 16px;
 }
 
+.mobileCapsuleImages {
+  display: none;
+}
+
 /* Floating Cards Layout - Positioned Exactly as in Design Reference */
 .floatingCard {
   position: absolute;
@@ -275,5 +279,40 @@
 
   .floatingCard {
     display: none !important;
+  }
+}
+
+/* Mobile Only 3-Capsule Image Layout - Restricted to Mobile Devices (<= 520px) */
+@media (max-width: 520px) {
+  .mobileCapsuleImages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 28px;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .capsuleItem {
+    position: relative;
+    width: 31%;
+    aspect-ratio: 1 / 1.6;
+    border-radius: 999px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+    background-color: #eef6ff;
+  }
+
+  .capsuleCenter {
+    transform: translateY(-6px);
+  }
+
+  .capsuleImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
   }
 }

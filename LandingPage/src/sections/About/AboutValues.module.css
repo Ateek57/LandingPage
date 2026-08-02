@@ -54,33 +54,92 @@
 }
 
 .valueCard {
-  background: #ffffff;
+  background: linear-gradient(135deg, #f8fafc 0%, #eff4f9 100%);
   border-radius: 24px;
   padding: 36px 32px;
-  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.03);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(203, 213, 225, 0.8);
   width: 100%;
   box-sizing: border-box;
 }
 
 .valueCard:hover {
   transform: translateY(-4px);
-  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.06);
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.1);
+  border-color: rgba(59, 130, 246, 0.4);
 }
 
 .iconCircle {
   width: 48px;
   height: 48px;
   border-radius: 12px;
-  background: #eff6ff;
+  background: #ffffff;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05);
+  border: 1px solid rgba(226, 232, 240, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 24px;
+}
+
+/* Card Color Themes (Unique vibrant pastel colors per card) */
+.valueCard:nth-child(1) {
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  border: 1px solid rgba(59, 130, 246, 0.25);
+}
+.valueCard:nth-child(1) .iconCircle {
+  background: #ffffff;
+  color: #2563eb;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.12);
+  border: 1px solid rgba(191, 219, 254, 0.8);
+}
+
+.valueCard:nth-child(2) {
+  background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+  border: 1px solid rgba(147, 51, 234, 0.25);
+}
+.valueCard:nth-child(2) .iconCircle {
+  background: #ffffff;
+  color: #9333ea;
+  box-shadow: 0 4px 14px rgba(147, 51, 234, 0.12);
+  border: 1px solid rgba(233, 213, 255, 0.8);
+}
+
+.valueCard:nth-child(3) {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  border: 1px solid rgba(22, 163, 74, 0.25);
+}
+.valueCard:nth-child(3) .iconCircle {
+  background: #ffffff;
+  color: #16a34a;
+  box-shadow: 0 4px 14px rgba(22, 163, 74, 0.12);
+  border: 1px solid rgba(187, 247, 208, 0.8);
+}
+
+.valueCard:nth-child(4) {
+  background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+  border: 1px solid rgba(234, 88, 12, 0.25);
+}
+.valueCard:nth-child(4) .iconCircle {
+  background: #ffffff;
+  color: #ea580c;
+  box-shadow: 0 4px 14px rgba(234, 88, 12, 0.12);
+  border: 1px solid rgba(254, 215, 170, 0.8);
+}
+
+.valueCard:nth-child(5) {
+  background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 100%);
+  border: 1px solid rgba(219, 39, 119, 0.25);
+}
+.valueCard:nth-child(5) .iconCircle {
+  background: #ffffff;
+  color: #db2777;
+  box-shadow: 0 4px 14px rgba(219, 39, 119, 0.12);
+  border: 1px solid rgba(251, 207, 232, 0.8);
 }
 
 .cardTitle {
@@ -96,7 +155,7 @@
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
   font-weight: 300;
-  color: #64748b;
+  color: #475569;
   line-height: 1.6;
   margin: 0;
 }
@@ -143,8 +202,17 @@
   }
 
   .valueCard {
+    background: linear-gradient(135deg, #f8fafc 0%, #eff4f9 100%);
+    border: 1px solid rgba(203, 213, 225, 0.8);
+    box-shadow: 0 10px 28px rgba(15, 23, 42, 0.06);
     padding: 24px 20px;
-    border-radius: 18px;
+    border-radius: 20px;
+  }
+
+  .iconCircle {
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
+    margin-bottom: 18px;
   }
 
   .cardTitle {

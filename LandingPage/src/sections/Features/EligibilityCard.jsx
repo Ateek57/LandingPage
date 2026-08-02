@@ -15,7 +15,7 @@ export const EligibilityCard = ({ data }) => {
           {data.checklist.map((item, idx) => (
             <li key={idx} className={styles.checkItem}>
               <div className={styles.checkIconBox}>
-                <CheckCircle2 size={18} color="#3b82f6" />
+                <CheckCircle2 size={18} color="#ffffff" />
               </div>
               <span>{item}</span>
             </li>
